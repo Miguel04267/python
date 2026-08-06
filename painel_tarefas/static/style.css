@@ -1,0 +1,2 @@
+body{background:#f4f6f9;min-height:100vh}.auth-card{max-width:440px;margin:5vh auto}.task-card{border-left:7px solid}.status-Pendente{border-color:#ffc107;background:#fff9df}.status-Em-andamento{border-color:#0d6efd;background:#eaf2ff}.status-Concluída{border-color:#198754;background:#eaf8ef}.grafico{height:420px;max-width:650px;margin:auto}
+[data-bs-theme="dark"] body{background:#111827}[data-bs-theme="dark"] .status-Pendente{background:#473d15}[data-bs-theme="dark"] .status-Em-andamento{background:#142c50}[data-bs-theme="dark"] .status-Concluída{background:#143d29}

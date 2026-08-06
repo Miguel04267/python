@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Cadastro{% endblock %}
+{% block content %}<div class="auth-card card shadow border-0"><div class="card-body p-4">
+<h2 class="mb-4"><i class="bi bi-person-plus text-primary"></i> Cadastro</h2>
+<form method="post"><div class="mb-3"><label class="form-label">Nome</label><input name="nome" class="form-control" required></div>
+<div class="mb-3"><label class="form-label">E-mail</label><input name="email" type="email" class="form-control" required></div>
+<div class="mb-3"><label class="form-label">Senha</label><input name="senha" type="password" minlength="6" class="form-control" required></div>
+<button class="btn btn-primary w-100">Cadastrar</button></form>
+<p class="mt-3 mb-0 text-center"><a href="{{ url_for('login') }}">Voltar ao login</a></p>
+</div></div>{% endblock %}

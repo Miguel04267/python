@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block content %}
+<div class="d-flex flex-wrap justify-content-between gap-2 mb-3"><div><h1>Painel de controle</h1></div>
+<a class="btn btn-primary align-self-center" href="{{ url_for('nova_tarefa') }}"><i class="bi bi-plus-lg"></i> Nova tarefa</a></div>
+<div class="mb-3"><label for="filtro" class="form-label">Filtrar por status</label><select id="filtro" class="form-select w-auto"><option>Todas</option><option>Pendente</option><option>Em andamento</option><option>Concluída</option></select></div>
+<div id="tarefas" class="row g-3"></div>
+<script>window.tarefasIniciais = {{ tarefas | tojson }};</script>
+{% endblock %}
